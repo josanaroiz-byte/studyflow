@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:'Inter',sans-serif;background:#f0f4f0;display:flex;justify-content:center;align-items:flex-start;min-height:100vh;padding:2rem 1rem;}
+  .card{background:#fff;border-radius:24px;max-width:560px;width:100%;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,0.10);}
+  .hero{background:linear-gradient(135deg,#2d6a4f 0%,#52b788 60%,#95d5b2 100%);padding:2.5rem 2rem 2rem;position:relative;overflow:hidden;}
+  .hero::before{content:"";position:absolute;top:-40px;right:-40px;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,0.08);}
+  .hero::after{content:"";position:absolute;bottom:-30px;left:-20px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.06);}
+  .tag{display:inline-block;background:rgba(255,255,255,0.2);color:#fff;font-size:11px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;padding:5px 12px;border-radius:20px;margin-bottom:14px;}
+  .hero h1{font-size:2.2rem;font-weight:900;color:#fff;line-height:1.15;margin-bottom:10px;position:relative;z-index:1;}
+  .hero h1 span{color:#d8f3dc;}
+  .hero p{font-size:14px;color:rgba(255,255,255,0.85);line-height:1.6;position:relative;z-index:1;}
+  .body{padding:2rem;}
+  .intro{font-size:15px;color:#333;line-height:1.7;margin-bottom:1.5rem;}
+  .intro strong{color:#2d6a4f;}
+  .features{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:1.8rem;}
+  .feat{background:#f6faf7;border:1px solid #d8f3dc;border-radius:14px;padding:14px 14px 12px;}
+  .feat .icon{font-size:22px;margin-bottom:6px;}
+  .feat h3{font-size:13px;font-weight:700;color:#2d6a4f;margin-bottom:3px;}
+  .feat p{font-size:12px;color:#666;line-height:1.5;}
+  .cta-box{background:linear-gradient(135deg,#2d6a4f,#52b788);border-radius:16px;padding:1.4rem 1.6rem;margin-bottom:1.8rem;text-align:center;}
+  .cta-box p{color:rgba(255,255,255,0.9);font-size:13px;margin-bottom:10px;line-height:1.5;}
+  .cta-box a{display:inline-block;background:#fff;color:#2d6a4f;font-size:13px;font-weight:700;padding:9px 22px;border-radius:20px;text-decoration:none;transition:transform .15s;}
+  .cta-box a:hover{transform:scale(1.04);}
+  .tags-row{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:1.8rem;}
+  .hashtag{background:#edf7f0;color:#2d6a4f;font-size:12px;font-weight:600;padding:5px 12px;border-radius:20px;}
+  .footer{border-top:1px solid #eee;padding-top:1.2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;}
+  .author{font-size:13px;color:#888;}
+  .author strong{color:#2d6a4f;font-weight:700;}
+  .mail-link{display:flex;align-items:center;gap:6px;font-size:13px;color:#2d6a4f;font-weight:600;text-decoration:none;background:#edf7f0;padding:6px 14px;border-radius:20px;transition:background .15s;}
+  .mail-link:hover{background:#d8f3dc;}
+  .mail-icon{font-size:16px;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="hero">
+    <div class="tag">🚀 Novidade</div>
+    <h1>Chega de<br><span>bagunça nos estudos!</span></h1>
+    <p>Conheça o StudyFlow — o app que vai transformar a forma como você organiza sua vida acadêmica.</p>
+  </div>
+
+  <div class="body">
+    <p class="intro">
+      Sabe aquela sensação de ter <strong>mil coisas pra fazer</strong> e não saber por onde começar? Provas chegando, trabalhos acumulando, horários se misturando... A gente sabe como é. 😅<br><br>
+      Por isso criamos o <strong>StudyFlow</strong> — uma ferramenta gratuita, linda e fácil de usar, feita especialmente pra <strong>estudantes de todos os níveis.</strong>
+    </p>
+
+    <div class="features">
+      <div class="feat">
+        <div class="icon">✅</div>
+        <h3>Tarefas & Prazos</h3>
+        <p>Organize tudo com prioridade alta, média ou baixa e nunca mais perca um prazo.</p>
+      </div>
+      <div class="feat">
+        <div class="icon">🗓️</div>
+        <h3>Cronograma Semanal</h3>
+        <p>Monte sua grade de estudos com blocos por matéria e visualize sua semana inteira.</p>
+      </div>
+      <div class="feat">
+        <div class="icon">🍅</div>
+        <h3>Timer Pomodoro</h3>
+        <p>25 min de foco + pausas estratégicas. Produtividade do jeito certo.</p>
+      </div>
+      <div class="feat">
+        <div class="icon">📊</div>
+        <h3>Estatísticas</h3>
+        <p>Veja seu progresso por matéria, horas estudadas e taxa de conclusão.</p>
+      </div>
+      <div class="feat">
+        <div class="icon">👥</div>
+        <h3>Multi-usuário</h3>
+        <p>Vários perfis no mesmo app. Ideal pra dividir com amigos ou família.</p>
+      </div>
+      <div class="feat">
+        <div class="icon">🎨</div>
+        <h3>Temas de Cor</h3>
+        <p>Azul, verde, roxo, coral ou dark mode. Personalize do seu jeito.</p>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <p>🌿 Totalmente <strong>gratuito</strong> e roda direto no browser — sem instalar nada!</p>
+      <a href="https://josanaroiz-byte.github.io/studyflow" target="_blank">✨ Acessar o StudyFlow</a>
+    </div>
+
+    <div class="tags-row">
+      <span class="hashtag">#StudyFlow</span>
+      <span class="hashtag">#Estudos</span>
+      <span class="hashtag">#Produtividade</span>
+      <span class="hashtag">#Pomodoro</span>
+      <span class="hashtag">#OrganizaçãoAcadêmica</span>
+      <span class="hashtag">#Estudante</span>
+      <span class="hashtag">#AppGratuito</span>
+    </div>
+
+    <div class="footer">
+      <span class="author">Elaborado por <strong>Josana Roiz</strong></span>
+      <a class="mail-link" href="mailto:josanaroiz@gmail.com">
+        <span class="mail-icon">✉️</span> josanaroiz@gmail.com
+      </a>
+    </div>
+  </div>
+</div>
+</body>
+</html>
